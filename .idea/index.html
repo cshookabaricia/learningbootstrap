@@ -18,16 +18,14 @@
 </head>
 <body>
 
-
-
 <!--add a Bootstrap navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-navbar-dark" style="background-color: #960037;">
 
     <!--<div class="container-fluid">-->
     <!-- Brand and toggle get grouped for better mobile display -->
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="https://github.com/cshookabaricia">
         <!--convert the style value to a class and then add the class to the css file.-->
-        <img src="img/solaire.png"  width="80%" class="d-inline-block align-top">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Evil_Eye.svg"  width="80%" class="d-inline-block align-top">
     </a>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,33 +34,33 @@
         <ul class="navbar-nav ml-auto" >
             <!--a simple top bar link-->
             <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link" href="http://cshookabaricia.github.io/resume">Resume</a>
             </li>
             <!--a top bar link which opens the url in a new page-->
             <li class="nav-item">
-                <a class="nav-link" href="#">US Airports Map</a>
+                <a class="nav-link" href="https://cshookabaricia.github.io/usairports">US Airports Map</a>
             </li>
             <!--a drop-down menu-->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" >Share To...</a>
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" >Share To</a>
                 <div class="dropdown-menu" >
                     <!--use font awesome icons-->
-                    <a class="dropdown-item" href="#"> <i class="fa fa-linkedin-square"></i> Linkedin</a>
-                    <a class="dropdown-item" href="#"> <i class="fa fa-facebook-square"></i> Facebook</a>
-                    <a class="dropdown-item" href="#"> <i class="fa fa-instagram"></i> Instagram </a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/"> <i class="fa fa-linkedin-square"></i> Linkedin</a>
+                    <a class="dropdown-item" href="https://www.facebook.com/"> <i class="fa fa-facebook-square"></i> Facebook</a>
+                    <a class="dropdown-item" href="https://www.instagram.com/"> <i class="fa fa-instagram"></i> Instagram </a>
                 </div>
             </li>
 
             <!--use icons in the top bar menu-->
             <li>
-                <a class="nav-link" href="#"> <i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;<span>Source Codes</span></a>
+                <a class="nav-link" href="https://github.com/cshookabaricia/tryingbootstrap/blob/master/README.md"> <i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;<span>Source Codes</span></a>
             </li>
             <!--an about page which open the url in a new page-->
             <li>
-                <a class= "nav-link" href="template3.html" target="_self">About</a>
+                <a class= "nav-link" href="https://www.linkedin.com/in/cshookabaricia/" target="_blank">About</a>
             </li>
         </ul>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-dark" style="background-color: #960037;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -71,14 +69,13 @@
 </nav>
 <!--map container-->
 <div id="map" class="map"></div>
-<div id="aquiferdata" class="layer"></div>
 
 //adding spatial data
 
 <script type="text/javascript">
-    var map = L.map("map", {zoomControl: true}).setView([40, -100], 5); // testing, changed to activate the zoomControl
+    var map = L.map("map", {zoomControl: true}).setView([45.498216, -122.4903129], 12); // testing, changed to activate the zoomControl
     // construct a base map in light color.md.
-    L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiY3Nob29rYWJhcmljaWEiLCJhIjoiY2pnb2Z1NW1zMDBsdTMzbnZ0Z2dyOTdoMiJ9.MKx_N6iKPgbIuQyWx2qJ3g').addTo(map);
+    L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v9/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiY3Nob29rYWJhcmljaWEiLCJhIjoiY2pnb2Z1NW1zMDBsdTMzbnZ0Z2dyOTdoMiJ9.MKx_N6iKPgbIuQyWx2qJ3g').addTo(map);
 
 </script>
 </body>
