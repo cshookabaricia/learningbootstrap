@@ -1,6 +1,6 @@
 # tryingbootstrap
-#### <u>Purpose</u>
-##### Becomming Familiar with Bootstrap Templates
+### <u>Purpose</u>
+##### Becoming Familiar with Bootstrap Templates
 
 
 ###### Sources:
